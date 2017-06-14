@@ -25,6 +25,7 @@ On the other side, each todo list has a unique item. A shopping list item should
 | Title         |
 | Status        |
 
+
 | Items         |
 | ------------- |
 | Description   |
@@ -36,10 +37,12 @@ On the other side, each todo list has a unique item. A shopping list item should
 * Remember, a User has many lists, and lists can belong to many users.
 
 With the above relationship, we want to be able to query via the following from the User:
+
 `rey = User.first`
 `rey.lists` (this should return all lists that belong to rey)
 
 With the above relationship, we want to be able to query via the following from the List (I want to see all the users that belongto a specific list):
+
 `grocery_list = List.first`
 `grocery_list.users` (this should return me all the users that belong to grocery_list)
 
