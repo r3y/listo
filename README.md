@@ -15,10 +15,20 @@ On the other side, each todo list has a unique item. A shopping list item should
 
 ### SCHEMA
 
-| Users         |     | Lists         |     | Items         |
-| ------------- |     | ------------- |     | ------------- |
-| Name          |     | Title         |     | Description   |
-| Email         |     | Status        |
+| Users         |
+| ------------- |
+| Name          |
+| Email         |
+
+| Lists         |
+| ------------- |
+| Title         |
+| Status        |
+
+| Items         |
+| ------------- |
+| Description   |
+
 
 
 ### Relationships
