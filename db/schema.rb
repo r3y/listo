@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20170615012217) do
 
   create_table "items", force: :cascade do |t|
     t.string "description"
-    t.boolean "status"
+    t.boolean "complete"
     t.bigint "list_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
