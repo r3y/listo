@@ -46,6 +46,6 @@ class ListsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def list_params
-      params.require(:list).permit(:title, :status)
+      params.require(:list).permit(:title)
     end
 end
