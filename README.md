@@ -17,18 +17,18 @@ On the other side, each todo list has a unique item. A shopping list item should
 
 | Users         |
 | ------------- |
-| Name : string |
-| Email: string |
+| name : string |
+| email: string |
 
 | Lists         |
 | ------------- |
-| Title: string |
+| title: string |
 
 
 | Items               |
 | --------------------|
-| Description: string |
-| Complete: boolean   |
+| description: string |
+| complete: boolean   |
 
 
 * the status above for Items is a boolean. So if the item is done, its true, and if the item is not, its false. 

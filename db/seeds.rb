@@ -18,18 +18,22 @@ rey_todo_list = List.create(
 
 apples = Item.create(
 		description: "Apples",
+		complete: "false"
 	)
 
 oranges = Item.create(
 		description: "Oranges",
+		complete: "true"
 	)
 
 clothes = Item.create(
 		description: "Clothes",
+		complete: "false"
 	)
 
 kettle = Item.create(
 	description: "Tea Kettle",
+	complete: "true"
 	)
 
 ## Users
