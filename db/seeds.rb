@@ -1,10 +1,11 @@
 ## Lists
 
 grocery_list = List.create(
-		title: "Grocery List"
+		title: "Grocery List",
+
 	)
 
-vivek__todo_list = List.create(
+vivek_todo_list = List.create(
 		title: "Vivek Shopping List"
 	)
 
@@ -18,7 +19,8 @@ rey_todo_list = List.create(
 
 apples = Item.create(
 		description: "Apples",
-		complete: "false"
+		complete: "false",
+		list: grocery_list
 	)
 
 oranges = Item.create(
@@ -49,3 +51,13 @@ rey = User.create(
 	)
 
 # What seed data is missing below that would help join lists to users, and users to lists?
+
+rey_lists = Userlist.create(
+	user: rey,
+	list: rey_todo_list
+	)
+
+vivek_lists = Userlist.create(
+	user: vivek,
+	list: vivek_todo_list
+	)
