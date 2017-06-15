@@ -1,44 +1,47 @@
+## Lists
 
-
-
-
-rey = User.create(
-	name: 'Rey'
+grocery_list = List.create(
+		title: "Grocery List"
 	)
+
+vivek__todo_list = List.create(
+		title: "Vivek Shopping List"
+	)
+
+rey_todo_list = List.create(
+		title: "Rey Shopping List"
+	)
+
+## Items
+
+# Whats an attribute missing from the items to help identify which list they belong to?
+
+apples = Item.create(
+		description: "Apples",
+	)
+
+oranges = Item.create(
+		description: "Oranges",
+	)
+
+clothes = Item.create(
+		description: "Clothes",
+	)
+
+kettle = Item.create(
+	description: "Tea Kettle",
+	)
+
+## Users
 
 vivek = User.create(
-	name: 'Vivek'
+		name: "Vivek",
+		email: "vpoola88@gmail.com"
 	)
 
-
-
-rey_fav = List.create(
-	name: 'Reys Favs'
-	)
-rey_try = List.create(
-	name: 'Try It Later'
-	)
-vivek_fav = List.create(
-	name: 'Viveks Favs'
+rey = User.create(
+		name: "Rey",
+		email: "r3y@gmail.com"
 	)
 
-
-
-item_1 = Item.create(name: 'Sour Negroni')
-item_2 = Item.create(name: 'Spiced Stormy')
-item_3 = Item.create(name: 'Goslings Stormy')
-item_4 = Item.create(name: 'Hennessy Sidecar')
-item_5 = Item.create(name: 'Simo Sidecar')
-
-
-
-ListItem.create(list: rey_fav, item: item_1)
-ListItem.create(list: rey_fav, item: item_2)
-
-ListItem.create(list: vivek_fav, item: item_1)
-ListItem.create(list: vivek_fav, item: item_2)
-ListItem.create(list: vivek_fav, item: item_3)
-
-ListItem.create(list: rey_try, item: item_3)
-ListItem.create(list: rey_try, item: item_4)
-ListItem.create(list: rey_try, item: item_5)
+# What seed data is missing below that would help join lists to users, and users to lists?

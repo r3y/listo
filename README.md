@@ -17,21 +17,21 @@ On the other side, each todo list has a unique item. A shopping list item should
 
 | Users         |
 | ------------- |
-| Name          |
-| Email         |
+| Name : string |
+| Email: string |
 
 | Lists         |
 | ------------- |
-| Title         |
-| Status        |
+| Title: string |
 
 
-| Items         |
-| ------------- |
-| Description   |
+| Items               |
+| --------------------|
+| Description: string |
+| Complete: boolean   |
 
 
-
+* the status above for Items is a boolean. So if the item is done, its true, and if the item is not, its false. 
 ### Relationships
 
 * Remember, a User has many lists, and lists can belong to many users.
@@ -69,4 +69,4 @@ Moving forward, here are some things to think about, and maybe steps to follow:
 4. Generate an Item resource. What attributes are important here to an item?
 5. Connect an Item and a List so that Lists have many Items, and an Item belongs to a list.
   * Its helpful to create seed data here so you can play with the relationships in Rails Console.
-6. Query the above, so only Users have Lists, Lists can identify which Users have access to them, and Items have a specific attribute *hint* to help connect them to a specific List.
+6. Query the above, so only Users have Lists, Lists can identify which Users have access to them, and Items have a specific attribute (*hint* )to help connect them to a specific List.
