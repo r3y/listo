@@ -1,24 +1,58 @@
-List.create(
+grocery_list = List.create(
 		title: "Grocery List"
 	)
 
-List.create(
-		title: "Shopping List"
+vivek_list = List.create(
+		title: "Vivek Shopping List"
+	)
+
+rey_list = List.create(
+		title: "Rey Shopping List"
 	)
 
 
-Item.create(
+apples = Item.create(
 		description: "Apples",
 		list_id: "1"
 	)
 
-Item.create(
+oranges = Item.create(
 		description: "Oranges",
 		list_id: "1"
 	)
 
-Item.create(
+clothes = Item.create(
 		description: "Clothes",
 		list_id: "2"
 	)
 
+kettle = Item.create(
+	description: "Tea Kettle",
+		list_id: "3"
+	)
+
+vivek = User.create(
+		name: "Vivek",
+		email: "vpoola88@gmail.com"
+	)
+
+rey = User.create(
+		name: "Rey",
+		email: "r3y@gmail.com"
+	)
+
+UserList.create(
+		user: vivek, list: grocery_list
+	)
+
+UserList.create(
+		user: rey, list: grocery_list
+	)
+
+UserList.create(
+		user: vivek, list: vivek_list
+	)
+
+UserList.create(
+		user: rey, list: rey_list
+	)
