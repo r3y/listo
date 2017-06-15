@@ -13,22 +13,26 @@ rey_list = List.create(
 
 apples = Item.create(
 		description: "Apples",
-		list_id: "1"
+		list_id: "1",
+		complete: "false"
 	)
 
 oranges = Item.create(
 		description: "Oranges",
-		list_id: "1"
+		list_id: "1",
+		complete: "true"
 	)
 
 clothes = Item.create(
 		description: "Clothes",
-		list_id: "2"
+		list_id: "2",
+		complete: "true"
 	)
 
 kettle = Item.create(
 	description: "Tea Kettle",
-		list_id: "3"
+		list_id: "3",
+		complete: "false"
 	)
 
 vivek = User.create(
